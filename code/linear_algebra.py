@@ -14,3 +14,7 @@ def vector_sum(vectors):
 		result = vector_add(result, vector)
 
 	return result
+
+def vector_sum_reduce(vectors):
+	"""sums all corresponding elements using reduce"""
+	return reduce(vector_add, vectors)
