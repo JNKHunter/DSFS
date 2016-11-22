@@ -18,3 +18,7 @@ def vector_sum(vectors):
 def vector_sum_reduce(vectors):
 	"""sums all corresponding elements using reduce"""
 	return reduce(vector_add, vectors)
+
+def scalar_multiply(c,v):
+	"""c is a number, v is a vector"""
+	return [c*v_i for v_i in v]
