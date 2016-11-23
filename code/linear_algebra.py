@@ -39,3 +39,6 @@ def sum_of_squares(v):
 
 def magnitude(v):
 	return math.sqrt(sum_of_squares(v))
+
+def squared_distance(v,w):
+	return sum_of_squares(vector_subtract(v,w))
