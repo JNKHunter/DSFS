@@ -1,3 +1,5 @@
+import math
+
 def vector_add(v,w):
 	"""adds corresponding elements"""
 	return [v_i + w_i for v_i, w_i in zip(v,w)]
@@ -34,3 +36,6 @@ def dot(v,w):
 def sum_of_squares(v):
 	"""v_1 * v_1 + ... + v_n * v_n"""
 	return dot(v,v)
+
+def magnitude(v):
+	return math.sqrt(sum_of_squares(v))
